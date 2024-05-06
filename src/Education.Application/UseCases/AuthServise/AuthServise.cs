@@ -36,6 +36,7 @@ namespace Education.Application.UseCases.AuthServise
                 new Claim("UserName",user.UserName!),
                 new Claim(ClaimTypes.Name,user.FullName!),
                 new Claim(ClaimTypes.Email,user.Email!),
+                new Claim("id",user.Id),
                 new Claim(ClaimTypes.Role, role[0]),
             };
             JwtSecurityToken token = new JwtSecurityToken(
