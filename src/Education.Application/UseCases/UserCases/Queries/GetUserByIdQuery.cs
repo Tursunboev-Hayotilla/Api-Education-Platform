@@ -10,6 +10,6 @@ namespace Education.Application.UseCases.UserCases.Queries
 {
     public class GetUserByIdQuery:IRequest<UserModel>
     {
-        public Guid Id { get; set; }
+        public string Id { get; set; }
     }
 }
